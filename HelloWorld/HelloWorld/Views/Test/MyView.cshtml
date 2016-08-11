@@ -1,5 +1,9 @@
-﻿@{
+﻿
+@model HelloWorld.ViewModel.EmployeeViewModel
+@*@model HelloWorld.Models.Employee*@
+@{
     Layout = null;
+    
 }
 
 <!DOCTYPE html>
@@ -12,9 +16,54 @@
 <body>
     Welcome to MVC 5 Step by Step learning
     <div>
-        <button id="btnTest" style="width:100px;height:30px" ></button>
-        <p> Test View </p>
+        @{ 
+            //HelloWorld.Models.Employee objEmployee = (HelloWorld.Models.Employee)ViewData["Employee"];
+            HelloWorld.Models.Employee objEmployee = (HelloWorld.Models.Employee)ViewBag.Employee;
+
+                //WebApplication1.Models.Employee emp = (WebApplication1.Models.Employee)ViewBag.Employee;
+        }
+        @*<p>
+            Employee First Name : @objEmployee.FirstName<br />
+            Employee Last Name  : @objEmployee.LastName<br />
+            Employee Salary     : @objEmployee.Salary
+        </p>
+
+        @if (@objEmployee.Salary > 2000)
+        {
+            <span style="background-color: yellow">Employee Salary: @Model.Salary.ToString("C")
+                        </span>
+            <span style="background-color: yellow">Employee Salary: @objEmployee.Salary.ToString("C")
+            </span>
+        }
+        else
+        {
+            <span style="background-color: green">Employee Salary: @objEmployee.Salary.ToString("C")
+            </span>
+
+        }*@
+
+
+        @*@if (Model.Salary > 2000)
+        {
+            <span style="background-color: yellow">Employee Salary: @Model.Salary.ToString("C")
+            </span>
+            
+        }
+        else
+        {
+                <span style="background-color: green">Employee Salary: @Model.Salary.ToString("C")
+            </span>
+        }*@
+
+        @*<span style="background-color: yellow">Employee Salary: @Model.SalaryColor
+            @Model.Salary
+            </span>*@
+
+        <span style="background-color:@Model.SalaryColor">
         
+            @Model.Salary
+        </span>
+
     </div>
 </body>
 </html>

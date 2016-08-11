@@ -21,6 +21,5 @@ F:\LongWayToMVC\Practice\HelloWorld\HelloWorld\bin\System.Web.Razor.xml
 F:\LongWayToMVC\Practice\HelloWorld\HelloWorld\bin\System.Web.WebPages.xml
 F:\LongWayToMVC\Practice\HelloWorld\HelloWorld\bin\System.Web.WebPages.Deployment.xml
 F:\LongWayToMVC\Practice\HelloWorld\HelloWorld\bin\System.Web.WebPages.Razor.xml
-F:\LongWayToMVC\Practice\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csprojResolveAssemblyReference.cache
 F:\LongWayToMVC\Practice\HelloWorld\HelloWorld\obj\Debug\HelloWorld.dll
 F:\LongWayToMVC\Practice\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb
